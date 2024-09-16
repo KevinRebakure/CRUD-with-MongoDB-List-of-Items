@@ -1,3 +1,12 @@
+import Item from "@/components/shared/Item";
+
 export default function ListPage() {
-  return <h1>List Page</h1>;
+  return (
+    <ul className="flex flex-col">
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+    </ul>
+  );
 }
