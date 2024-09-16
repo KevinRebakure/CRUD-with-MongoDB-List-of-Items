@@ -5,22 +5,21 @@ import Button from "../shared/Button";
 
 export default function PageLayout() {
   return (
-    <div className="bg-tertiary-100 relative mx-auto min-h-screen w-[430px] space-y-10">
+    <div className="bg-tertiary-100 relative mx-auto grid min-h-screen w-[430px] grid-rows-5">
       <h1 className="px-4 py-10 text-3xl font-semibold">{Titles.APP_NAME}</h1>
 
-      <div className="px-4">
+      <div className="row-span-3 px-4">
         <Outlet />
       </div>
 
-      <div className="px-4">
+      <div className="space-y-4 px-4">
         <Button
           label={ButtonLabels.ADD_ITEM}
           iconURL={IconsURL.ADD_ICON}
           className="font-semibold"
         />
+        <BottomNavBar />
       </div>
-
-      <BottomNavBar />
     </div>
   );
 }
