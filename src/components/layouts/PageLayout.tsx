@@ -6,12 +6,12 @@ import Button from "../shared/Button";
 export default function PageLayout() {
   const data = useLocation();
   return (
-    <div className="bg-tertiary-100 mx-auto min-h-screen w-[430px] space-y-20">
+    <div className="bg-tertiary-100 relative mx-auto min-h-screen w-[430px] space-y-10">
       {data.pathname !== RoutePaths.INDEX && (
-        <h1 className="text-3xl font-semibold">{Titles.APP_NAME}</h1>
+        <h1 className="px-4 py-10 text-3xl font-semibold">{Titles.APP_NAME}</h1>
       )}
 
-      <div>
+      <div className="px-4">
         <Outlet />
       </div>
 
@@ -21,8 +21,9 @@ export default function PageLayout() {
           iconURL={IconsURL.ADD_ICON}
           className="font-semibold"
         />
-        <BottomNavBar />
       </div>
+
+      <BottomNavBar />
     </div>
   );
 }

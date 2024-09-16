@@ -5,5 +5,5 @@ export enum Titles {
 }
 
 export enum ButtonLabels {
-    ADD_ITEM = 'Add a new item'
+  ADD_ITEM = "Add a new item",
 }

@@ -4,8 +4,8 @@ import { Titles } from "../constants";
 export default function HomePage() {
   return (
     <>
-      <div className="space-y-32">
-        <h1 className="bg-secondary-100 py-10 text-center text-3xl font-semibold">
+      <div className="relative space-y-32">
+        <h1 className="bg-secondary-100 rounded-b-3xl py-10 text-center text-3xl font-semibold">
           {Titles.APP_NAME}
         </h1>
 
