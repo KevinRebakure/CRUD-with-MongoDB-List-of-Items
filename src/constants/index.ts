@@ -1,5 +1,5 @@
 import { Titles } from "./labels";
 import { ButtonLabels } from "./labels";
 import { IconsURL } from "./iconsURL";
-
-export { Titles, ButtonLabels, IconsURL };
+import { RoutePaths } from "./routePaths";
+export { Titles, ButtonLabels, IconsURL, RoutePaths };
