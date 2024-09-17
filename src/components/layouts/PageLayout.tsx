@@ -7,7 +7,7 @@ export default function PageLayout() {
   const currentPath = useLocation().pathname;
   console.log(currentPath);
   return (
-    <div className="relative mx-auto grid min-h-screen w-[430px] grid-rows-5 bg-tertiary-100">
+    <div className="mx-auto grid min-h-screen w-[430px] grid-rows-5 bg-tertiary-100">
       <h1 className="px-4 py-10 text-3xl font-semibold">{Titles.APP_NAME}</h1>
 
       <div className="row-span-3 px-4">
@@ -23,8 +23,8 @@ export default function PageLayout() {
             </span>
           </Link>
         )}
+        <BottomNavBar />
       </div>
-      <BottomNavBar />
     </div>
   );
 }

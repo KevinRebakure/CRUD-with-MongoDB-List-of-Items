@@ -3,7 +3,7 @@ import { Titles } from "../constants";
 
 export default function HomePage() {
   return (
-    <div className="py-36">
+    <div className="py-24 border-black border">
       <p className="text-center">{Titles.HERO}</p>
 
       <p className="flex items-center justify-center text-center">

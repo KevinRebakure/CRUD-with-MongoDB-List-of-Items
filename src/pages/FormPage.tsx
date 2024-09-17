@@ -10,7 +10,7 @@ import {
 
 export default function FormPage() {
   return (
-    <form action="" className="space-y-4">
+    <form action="" className="space-y-3">
       <h1 className="text-center text-xl font-semibold">Create an item</h1>
       <Input
         placeholder={FormPlaceHolders.TITLE}
