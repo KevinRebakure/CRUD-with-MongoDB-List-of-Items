@@ -1,5 +1,12 @@
+import Button from "@/components/shared/Button";
 import Input from "../components/shared/forms/Input";
-import { FormInputTypes, FormLabels, FormPlaceHolders } from "../constants";
+import {
+  ButtonLabels,
+  FormInputTypes,
+  FormLabels,
+  FormPlaceHolders,
+  IconsURL,
+} from "../constants";
 
 export default function FormPage() {
   return (
@@ -19,6 +26,11 @@ export default function FormPage() {
         placeholder={FormPlaceHolders.PRICE}
         label={FormLabels.PRICE}
         type={FormInputTypes.PRICE}
+      />
+      <Button
+        label={ButtonLabels.ADD_ITEM}
+        className="w-full"
+        iconURL={IconsURL.ADD_ICON}
       />
     </form>
   );
