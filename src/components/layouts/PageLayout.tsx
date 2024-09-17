@@ -14,7 +14,7 @@ export default function PageLayout() {
 
       <div className="space-y-4 px-4">
         <Link to={RoutePaths.FORM_PAGE}>
-          <span className="flex w-full items-center justify-center gap-1 rounded-xl bg-primary-100 py-3 text-center">
+          <span className="flex w-full items-center justify-center gap-1 rounded-xl bg-primary-100 py-3 text-center transition-colors duration-200 hover:bg-secondary-100">
             <img src={IconsURL.ADD_ICON} alt="" className="h-4 w-4" />
             <span>Add a new item</span>
           </span>
