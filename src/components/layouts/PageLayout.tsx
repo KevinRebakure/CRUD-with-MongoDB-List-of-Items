@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
-import { ButtonLabels, IconsURL, Titles } from "../../constants";
+import { IconsURL, RoutePaths, Titles } from "../../constants";
 import BottomNavBar from "../shared/BottomNavBar";
-import Button from "../shared/Button";
+import { Link } from "react-router-dom";
 
 export default function PageLayout() {
   return (
@@ -13,11 +13,12 @@ export default function PageLayout() {
       </div>
 
       <div className="space-y-4 px-4">
-        <Button
-          label={ButtonLabels.ADD_ITEM}
-          iconURL={IconsURL.ADD_ICON}
-          className="font-semibold"
-        />
+        <Link to={RoutePaths.FORM_PAGE}>
+          <span className="flex w-full items-center justify-center gap-1 rounded-xl bg-primary-100 py-3 text-center">
+            <img src={IconsURL.ADD_ICON} alt="" className="h-4 w-4" />
+            <span>Add a new item</span>
+          </span>
+        </Link>
         <BottomNavBar />
       </div>
     </div>
